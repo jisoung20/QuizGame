@@ -127,7 +127,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="QuizGame.cpp" />
+    <ClCompile Include="BGM1.cpp" />
+    <ClCompile Include="Countdown.cpp" />
+    <ClCompile Include="gameover.cpp" />
+    <ClCompile Include="gotoxy.cpp" />
+    <ClCompile Include="howto.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Round1.cpp" />
+    <ClCompile Include="Start.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BGM1.h" />
+    <ClInclude Include="Countdown.h" />
+    <ClInclude Include="gameover.h" />
+    <ClInclude Include="howto.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Round1.h" />
+    <ClInclude Include="Start.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="게임화면.h" />
+    <ClInclude Include="초기화면.h" />
+    <ClInclude Include="gotoxy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QuizGame.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
