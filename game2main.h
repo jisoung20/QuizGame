@@ -1,5 +1,5 @@
 #pragma once
-class Start
+class game2main
 {
 };
 

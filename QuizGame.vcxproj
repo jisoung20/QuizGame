@@ -128,13 +128,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BGM1.cpp" />
-    <ClCompile Include="Countdown.cpp" />
-    <ClCompile Include="gameover.cpp" />
+    <ClCompile Include="Countdown.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="game2main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="gameover.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="gameclear.cpp" />
     <ClCompile Include="gotoxy.cpp" />
     <ClCompile Include="howto.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Round1.cpp" />
+    <ClCompile Include="Round2.cpp" />
+    <ClCompile Include="Round3.cpp" />
     <ClCompile Include="Start.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Title.cpp">
@@ -144,11 +157,15 @@
   <ItemGroup>
     <ClInclude Include="BGM1.h" />
     <ClInclude Include="Countdown.h" />
+    <ClInclude Include="game2main.h" />
     <ClInclude Include="gameover.h" />
+    <ClInclude Include="gameclear.h" />
     <ClInclude Include="howto.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Round1.h" />
+    <ClInclude Include="Round2.h" />
+    <ClInclude Include="Round3.h" />
     <ClInclude Include="Start.h" />
     <ClInclude Include="Title.h" />
     <ClInclude Include="게임화면.h" />
