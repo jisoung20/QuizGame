@@ -205,6 +205,7 @@ void Round2() {
 		}
 		else {
 			On = false;
+			exit(0);
 			break;
 		}
 

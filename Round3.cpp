@@ -190,6 +190,7 @@ void Round3() {
 		}
 		else {
 			On = false;
+			exit(0);
 			break;
 		}
 

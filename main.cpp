@@ -12,7 +12,6 @@
 #include"Round1.h"
 #include"gameclear.h"
 #include"Countdown.h"
-#include"Title.h"
 #pragma comment(lib,"winmm.lib")
 
 	// 메인화면 시작과 동시에 BGM재생시작(BGM은 게임이 종료될때까지 실행된다)★
@@ -94,10 +93,10 @@ int keycontrol() {
 	}
 }
 
-//메인화면 구현
+//메뉴선택 구현
 int menudraw() {
-	int x = 50; //24->50
-	int y = 22;  //12-> 22
+	int x = 50; // 시작좌표 (50,22)
+	int y = 22; 
 	gotoxy(x - 2, y);
 	printf("> 게임시작\n");
 	gotoxy(x, y + 1);
@@ -108,7 +107,7 @@ int menudraw() {
 		int n = keycontrol();//키보드 이벤트를 키값으로 받아오기
 		switch (n) {
 		case UP: { // 입력 받은 값이 UP일경우
-			if (y > 22) { // 최대 12
+			if (y > 22) { // 최대 22
 				gotoxy(x - 2, y);
 				printf(" ");
 				gotoxy(x - 2, --y);
@@ -118,7 +117,7 @@ int menudraw() {
 		}
 
 		case DOWN: {
-			if (y < 24) { // 최대 14
+			if (y < 24) { // 최대 24
 				gotoxy(x - 2, y);
 				printf(" ");
 				gotoxy(x - 2, ++y);
